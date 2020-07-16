@@ -1,0 +1,67 @@
+<script>
+function abc() {
+  var var_abc = document.getElementById('xyz').value;
+  console.log(var_abc);
+}
+</script>
+<html>
+<body>
+  <form>
+    <input type="text" id="xyz" value="">
+    <input type="button" value="Submit" onclick="abc()" />
+  </form>
+  <script>
+  document.write("JavaScript support various types of array, string array is one of them. String array is nothing but it is all about the array of the string. The array is a variable that stores the multiple values of similar types. In the context of a string array, it stores the string value only. The string is a combination of characters. Here are few examples of string –RAM, SHYAM, XYZ, xyz etc.");
+  document.write("<br />");
+  document.write("This is a normal array. In this, we declare an array in such a way the indexing will start from 0 itself. 0 will be followed by 1, 2, 3, ….n.");
+  document.write("<br />");
+  document.write("Types of Array-");
+  document.write("<br />");
+  document.write("1)Traditional Array");
+  document.write("<br />");
+  document.write("This is a normal array. In this, we declare an array in such a way the indexing will start from 0 itself. 0 will be followed by 1, 2, 3, ….n.");
+  document.write("<br />");
+  var characters = ["AB", "CD", "XY"];
+  document.write("<br />");
+  document.write("2)String Array as An Object");
+document.write("<br />");
+document.write("This is a type of array that uses the object of key-value pairs.");
+document.write("<br />");
+var objectArray  = {0: "1", 1: '2', 2: 'Mess',3: 'empty string'};
+document.write("Function on A String Array-");
+document.write("<br />");
+document.write("This will concatenate the string array element together with the specified separator. The below code will join the array elements with the pipeline operator  (|).");
+document.write("<br />");
+var characters = ["AB", "CD", "XY"];
+var outputstring  = characters.join(" | ");
+document.write("<br />");
+document.write("concat() function");
+document.write("<br />");
+document.write("we can use this function to join two arrays.");
+document.write("<br />");
+var characters1 = ["AB", "CD", "XY"];
+var characters2 = ["AB", "CD", "XY"];
+var characters = characters1.concat(characters2);
+document.write("<br />");
+document.write("includes() function");
+document.write("<br />");
+document.write("This function will return the boolean value (true or false). If a specified string exists in an array then it will return true otherwise it will return false.");
+document.write("<br />");
+var characters1 = ["AB", "CD", "XY"];
+var characters = characters1.includes("CD");
+alert(characters);  // true
+var characters = characters1.includes("CDA"); // false
+alert(characters);  // true
+document.write("<br />");
+document.write("split() function");
+document.write("<br />");
+document.write("this function will take the string as an input and will split that to the array.");
+document.write("<br />");
+var str = "Welcome to the JavaScript Blogging!";
+var result = str.split(" ");
+alert(result[0]); // this will print Welcome
+alert(result); // this will print Welcome,to,the,JavaScript,Blogging!
+document.write("<br />");
+  </script>
+</body>
+</html>
